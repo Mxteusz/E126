@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+
+<h1>Czy na pewno chcesz usunąć <%= card.name %>?</h1>
+
+<form action="/delete/<%= card._id %>" method="POST" style="display:inline;">
+    <button type="submit">Usuń</button>
+</form>
+
+<a href="/">Anuluj</a>
+
+<%- include('../partials/footer') %>

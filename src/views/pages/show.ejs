@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+
+<main>
+    <ul>
+        <li>
+            <h1><b>ID: <%= card._id %></b><br></h1>
+            <h1><b>Nazwa: <%= card.name %></b><br></h1>
+            <h1><b>Rzadkość: <%= card.rarity %></b><br></h1>
+            <h1><b>Ilość eliksiru: <%= card.elixir %></b><br></h1>
+            <h1><b>Opinia o karcie: <%= card.opinion %></b><br></h1>
+            <h1><b>Data dodania: <%= card.createdAt %></b><br></h1>
+        </li>
+        <a href="/">Anuluj</a>
+        <hr>
+    </ul>
+</main>
+
+<%- include('../partials/footer') %>

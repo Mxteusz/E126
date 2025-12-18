@@ -1,0 +1,1 @@
+docker run -d --name mongo_clashRoyaleCards -p 27017:27017 mongo:6.0

@@ -1,0 +1,18 @@
+body{
+    background-image: url("/images/clashroyale.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#higher_layer{
+    z-index: 0;
+}
+
+#lower_layer{
+    z-index: -1;
+    background-color: #FFFfff55;
+    height: 167vh;
+    width: 167vw;
+}
+

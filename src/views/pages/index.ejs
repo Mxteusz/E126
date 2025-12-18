@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+
+<main>
+    <ul>
+        <% cards.forEach(card => { %>
+        <li>
+            <b>Nazwa: <%= card.name %></b><br>
+            <b>Rzadkość: <%= card.rarity %></b><br>
+            <b>Ilość eliksiru: <%= card.elixir %></b><br>
+            Opinia o karcie: <%= card.opinion %>
+            <a href="/edit/<%= card._id %>">Edytuj</a>
+            <a href="/delete/<%= card._id %>">Usuń</a>
+            <a href="/show/<%= card._id %>">Wyświetl</a>
+            </form>
+        </li>
+        <hr>
+    <% }) %>
+    </ul>
+</main>
+    </div>
+    </div>
+<%- include('../partials/footer') %>
